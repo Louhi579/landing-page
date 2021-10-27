@@ -2,6 +2,9 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -67,7 +70,7 @@ a {
   color: #e5e7eb;
 }
 
-#sign-up {
+.sign-up {
   width: 100px;
   height: 30px;
   color: #f9faf8;
@@ -85,4 +88,98 @@ a {
 #placeholder {
   height: 250px;
   flex-shrink: 0;
+}
+
+.info-sub-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 52px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+#information-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.item {
+  width: 200px;
+}
+
+.small {
+  width: 185px;
+  height: 185px;
+  border: solid;
+  border-radius: 8px;
+  border-color: #3882f6;
+}
+
+.text {
+  text-align: center;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  gap: 52px;
+  padding: 100px;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+}
+
+.quote-credit {
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.container {
+  display: flex;
+  background-color: #3882f6;
+  border-radius: 8px;
+  flex: 1 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.cta-text {
+  color: white;
+}
+
+#cta-heading {
+  margin-bottom: 0;
+}
+
+#cta-subtext {
+  margin-top: 0;
+}
+
+#bottom-signup {
+  border-style: solid;
+  border-color: white;
+}
+
+.footer {
+  background-color: #1f2937;
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding: 30px;
+  margin-top: auto;
 }
